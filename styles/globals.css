@@ -11,15 +11,29 @@ html {
 }
 
 .btn-neon {
-  @apply text-accentColorBrightLightBlue bg-midnightDarkBlue py-[1.6rem] px-[3.6rem] space-x-[0.8rem];
+  @apply text-accentColorBrightLightBlue bg-midnightDarkBlue py-[1.6rem] px-[3rem] space-x-[0.8rem];
+}
+
+.btn-neon svg {
+  width: 24px;
+  height: 24px;
 }
 
 .hero-background-home {
-  @apply absolute z-0 bg-cover w-full top-[-7.5rem] left-1/2 -translate-x-1/2 bg-homeHeroMobile xs:bg-homeHeroDesktop xs:w-[144rem] xs:h-full;
+  @apply absolute z-0 bg-cover bg-no-repeat w-full top-[-7.5rem] left-1/2 -translate-x-1/2 bg-homeHeroMobile xs:bg-homeHeroDesktop xs:w-[144rem] xs:h-full;
   height: calc(100% + 7.5rem);
 }
 
-@media screen and (max-width: 424px) {
-  .hero-background-home {
-  }
+.hero-background-about {
+  @apply bg-no-repeat bg-cover bg-center bg-aboutHeroMoble md:bg-agoutHeroDesktop md:bg-[length:144rem];
+}
+
+.hero-gradient-about {
+  background: linear-gradient(
+    90deg,
+    rgb(170 22 22 / 0%) 0%,
+    rgb(255 255 255 / 32.8%) 90%,
+    rgb(255 255 255 / 90%) 95%,
+    rgb(255 255 255) 100%
+  );
 }

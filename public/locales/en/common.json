@@ -130,12 +130,12 @@
     "value": {
       "heading": "Our Values",
       "values": [
-        { "text": "Purpose Driven", "color": "blue" },
-        { "text": "Utility Focused", "color": "green" },
-        { "text": "Digital Privacy", "color": "orange" },
-        { "text": "User Experience", "color": "red" },
-        { "text": "Creativity", "color": "blue" },
-        { "text": "Stability", "color": "orange" }
+        { "text": "Purpose Driven", "color": "BrightLightBlue" },
+        { "text": "Utility Focused", "color": "Mint" },
+        { "text": "Digital Privacy", "color": "Orange" },
+        { "text": "User Experience", "color": "RedOrange" },
+        { "text": "Creativity", "color": "BrightLightBlue" },
+        { "text": "Stability", "color": "Orange" }
       ]
     },
     "team": {

@@ -23,7 +23,7 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
       id="modal-container"
     >
       <Header />
-      <main>{children}</main>
+      <>{children}</>
     </div>
   );
 };

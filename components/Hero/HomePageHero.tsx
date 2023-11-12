@@ -19,10 +19,10 @@ export const HomePageHero = () => {
         <div className="mx-auto w-[24.5rem] mb-[4rem]">
           <Image src={Logo} alt="Logo" />
         </div>
-        <h1 className="mx-auto font-grotesk font-bold text-[3.2rem] text-center tracking-[0.32px] leading-[3.8rem] max-w-[35rem] mb-4 text-midnightDarkBlue md:text-[8rem] md:leading-[9rem] md:max-w-[80rem]">
+        <h1 className="mx-auto font-grotesk font-bold text-[3.2rem] text-center tracking-[0.32px] leading-[3.8rem] max-w-[35rem] mb-4 text-midnightDarkBlue md:text-[8rem] md:leading-[9rem] md:max-w-[110rem]">
           {t('homepage.hero.heading')}
         </h1>
-        <p className="max-w-lg mx-auto font-sans text-[1.8rem] leading-[2.4rem] mb-[4rem] text-center md:text-[2.4rem] md:leading-[3.8rem] md:max-w-[60rem]">
+        <p className="max-w-3xl mx-auto font-sans text-[1.8rem] leading-[2.4rem] mb-[4rem] text-center md:text-[2.4rem] md:leading-[3.8rem] md:max-w-6xl">
           {t('homepage.hero.paragraph')}
         </p>
         <div className="space-y-8 md:flex md:justify-center md:items-center md:space-y-0 md:max-w-max md:mx-auto md:space-x-10">

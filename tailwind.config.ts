@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       screens: {
         xs: '425px',
+        '2xl': '1440px',
       },
       fontFamily: {
         sora: ['var(--font-sora)'],
@@ -22,9 +23,9 @@ const config: Config = {
         neutralColor10: '#fff',
         neutralColor20: '#f4f4f4',
         accentColorBrightLightBlue: '#41eef9',
-        // --accent-color-orange: #ffc123;
-        // --accent-color-red-orange: #f97068;
-        // --accent-color-mint: #a9f5c4;
+        accentColorOrange: '#ffc123',
+        accentColorRedOrange: '#f97068',
+        accentColorMint: '#a9f5c4',
         //       --neutral-color-20: #f4f4f4;
         // --neutral-color-30: #bababa;
         // --neutral-color-40: #989898;
@@ -35,6 +36,8 @@ const config: Config = {
       backgroundImage: () => ({
         homeHeroMobile: 'url("../public/images/bg/home-hero-bg-mobile.webp")',
         homeHeroDesktop: 'url("../public/images/bg/home-hero-bg.webp")',
+        aboutHeroMoble: 'url("../public/images/bg/about-hero-bg-mobile.webp")',
+        agoutHeroDesktop: 'url("../public/images/bg/about-hero-bg.webp")',
       }),
       keyframes: {
         slidein: {
