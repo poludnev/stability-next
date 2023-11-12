@@ -9,6 +9,7 @@ export const Values = () => {
   }[] = getLocalisedText('aboutPage.value.values', {
     returnObjects: true,
   });
+  const createColorClass = (color: string) => `bg-accentColor${color}`;
   return (
     <section className="bg-midnightDarkBlue text-neutralColor10 py-[1.3rem]">
       <div>
@@ -18,7 +19,7 @@ export const Values = () => {
             {valuesList.map(({ text, color }, index) => (
               <span
                 key={text + index}
-                className={`flex items-center justify-center rounded-full py-[0.4rem] px-[1.6rem] text-[1.8rem] bg-accentColor${color} text-midnightDarkBlue`}
+                className={`flex items-center justify-center rounded-full py-[0.4rem] px-[1.6rem] text-[1.8rem] ${createColorClass(color)} text-midnightDarkBlue`}
               >
                 {text}
               </span>

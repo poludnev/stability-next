@@ -56,5 +56,11 @@ const config: Config = {
     },
   },
   plugins: [],
+  safelist: [
+    'bg-accentColorBrightLightBlue',
+    'bg-accentColorOrange',
+    'bg-accentColorRedOrange',
+    'bg-accentColorMint',
+  ],
 };
 export default config;
