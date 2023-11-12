@@ -40,7 +40,7 @@
   "productPage": {
     "hero": {
       "heading": "Unlock the digital future",
-      "headingMobile": "Unlock the digital future"
+      "button": "start building"
     },
     "features": {
       "publicDisadvantages": {

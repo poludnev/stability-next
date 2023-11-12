@@ -7,16 +7,21 @@ html {
 }
 
 .btn {
-  @apply flex items-center justify-between rounded-[1rem] border duration-300 min-w-max font-grotesk font-bold text-[1.8rem] tracking-[0.9px] leading-[normal] uppercase py-[1.4rem] px-[2.4rem];
+  @apply flex items-center justify-between rounded-[1rem] bg-primaryWaterBlue border border-midnightDarkBlue hover:bg-midnightDarkBlue hover:text-primaryWaterBlue duration-300 min-w-max font-grotesk font-bold text-[1.8rem] tracking-[0.9px] leading-[normal] uppercase py-[1rem] px-[1.4rem] space-x-[0.8rem];
+}
+
+.btn svg {
+  @apply duration-300;
+  width: 24px;
+  height: 24px;
 }
 
 .btn-neon {
-  @apply text-accentColorBrightLightBlue bg-midnightDarkBlue py-[1.6rem] px-[3rem] space-x-[0.8rem];
+  @apply text-accentColorBrightLightBlue hover:text-accentColorBrightLightBlue bg-midnightDarkBlue py-[1.6rem] px-[3rem];
 }
 
-.btn-neon svg {
-  width: 24px;
-  height: 24px;
+.btn-blue {
+  @apply bg-primaryWaterBlue text-midnightDarkBlue;
 }
 
 .hero-background-home {
@@ -26,6 +31,10 @@ html {
 
 .hero-background-about {
   @apply bg-no-repeat bg-cover bg-center bg-aboutHeroMoble md:bg-agoutHeroDesktop md:bg-[length:144rem];
+}
+
+.hero-background-product {
+  @apply bg-productHero bg-cover;
 }
 
 .hero-gradient-about {

@@ -13,7 +13,7 @@ export const HomePageHero = () => {
     window.open('https://docs.stabilityprotocol.com/resources/marketplace/', '_blank');
   };
   return (
-    <section className="relative p-[3.4rem] pb-[10rem] md:px-[5rem] md:pt-[15rem] md:pb-[21.4rem">
+    <section className="relative p-[3.4rem] pb-[10rem] md:px-[5rem] md:pt-[15rem] md:pb-[21.4rem]">
       <div className="hero-background-home"></div>
       <div className="relative">
         <div className="mx-auto w-[24.5rem] mb-[4rem]">
@@ -62,7 +62,7 @@ export const HomePageHero = () => {
           </button>
         </div>
       </div>
-      <div className="absolute left-1/2 bottom-0 translate-y-1/2 -translate-x-1/2 w-[27.7rem]">
+      <div className="absolute left-1/2 bottom-0 translate-y-1/2 -translate-x-1/2 w-[27.7rem] md:w-[42rem]">
         <Image src={BalckDiamond} alt="black diamond" />
       </div>
     </section>
