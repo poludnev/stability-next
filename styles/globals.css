@@ -5,3 +5,21 @@
 html {
   font-size: 62.5%;
 }
+
+.btn {
+  @apply flex items-center justify-between rounded-[1rem] border duration-300 min-w-max font-grotesk font-bold text-[1.8rem] tracking-[0.9px] leading-[normal] uppercase py-[1.4rem] px-[2.4rem];
+}
+
+.btn-neon {
+  @apply text-accentColorBrightLightBlue bg-midnightDarkBlue py-[1.6rem] px-[3.6rem] space-x-[0.8rem];
+}
+
+.hero-background-home {
+  @apply absolute z-0 bg-cover w-full top-[-7.5rem] left-1/2 -translate-x-1/2 bg-homeHeroMobile xs:bg-homeHeroDesktop xs:w-[144rem] xs:h-full;
+  height: calc(100% + 7.5rem);
+}
+
+@media screen and (max-width: 424px) {
+  .hero-background-home {
+  }
+}

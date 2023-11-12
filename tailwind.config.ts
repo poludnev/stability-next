@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        xs: '425px',
+      },
       fontFamily: {
         sora: ['var(--font-sora)'],
         grotesk: ['var(--font-grotesk)'],
@@ -18,6 +21,10 @@ const config: Config = {
         midnightDarkBlue: '#2d3353',
         neutralColor10: '#fff',
         neutralColor20: '#f4f4f4',
+        accentColorBrightLightBlue: '#41eef9',
+        // --accent-color-orange: #ffc123;
+        // --accent-color-red-orange: #f97068;
+        // --accent-color-mint: #a9f5c4;
         //       --neutral-color-20: #f4f4f4;
         // --neutral-color-30: #bababa;
         // --neutral-color-40: #989898;
@@ -25,6 +32,10 @@ const config: Config = {
         // --neutral-color-60: #3f3f3f;
         // --neutral-color-70: #0a0a0a;
       },
+      backgroundImage: () => ({
+        homeHeroMobile: 'url("../public/images/bg/home-hero-bg-mobile.webp")',
+        homeHeroDesktop: 'url("../public/images/bg/home-hero-bg.webp")',
+      }),
       keyframes: {
         slidein: {
           '0%': { right: '-60%' },

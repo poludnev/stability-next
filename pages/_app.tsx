@@ -1,9 +1,10 @@
 import Head from 'next/head';
 import type { AppProps } from 'next/app';
+import { appWithTranslation } from 'next-i18next';
 import '@/styles/globals.css';
 import { Layout } from '@/components/Layout/Layout';
 
-export default function App({ Component, pageProps }: AppProps) {
+function App({ Component, pageProps }: AppProps) {
   return (
     <Layout>
       <Head>
@@ -16,3 +17,5 @@ export default function App({ Component, pageProps }: AppProps) {
     </Layout>
   );
 }
+
+export default appWithTranslation(App);

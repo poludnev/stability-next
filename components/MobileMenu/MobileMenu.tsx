@@ -1,5 +1,6 @@
 import Image from 'next/image';
-import { NavigationMobile } from '..';
+import { useTranslation } from 'next-i18next';
+import { NavigationMobile } from '@/components';
 import closeIcon from '@/public/icons/close-cross-icon.svg';
 import { TouchEventHandler, useState } from 'react';
 
@@ -12,6 +13,7 @@ export const MobileMenu = ({
   onClose: () => void;
   signUpHandler: () => void;
 }) => {
+  const { t } = useTranslation();
   const ONSWIPE_DEFAULT_DISTANCE_RATIO = 0.95;
   const [isShow, setIsShow] = useState(show);
   const closeHandler = (): void => {
@@ -56,7 +58,7 @@ export const MobileMenu = ({
           className="px-[2.4rem] py-[1.4rem] rounded-[8px] bg-primaryWaterBlue border border-midnightDarkBlue text-midnightDarkBlue text-[1.8rem] hover:bg-midnightDarkBlue hover:text-primaryWaterBlue duration-300 uppercase font-grotesk font-bold tracking-widest leading-none"
           onClick={signUpHandler}
         >
-          Build on stability
+          {t('buttons.earlyAccess')}
         </button>
       </div>
     </div>

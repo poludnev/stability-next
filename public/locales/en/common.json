@@ -1,0 +1,302 @@
+{
+  "homepage": {
+    "hero": {
+      "heading": "The world’s first tokenless public blockchain network",
+      "paragraph": "Testnet is now Live. Discover how our feeless design is changing the blockchain experience."
+    },
+    "mission": {
+      "missionTag": "</our mission>",
+      "heading": [
+        { "text": "To create a more ", "styled": false },
+        { "text": "efficient", "styled": true },
+        { "text": ", ", "styled": false },
+        { "text": "secure ", "styled": true },
+        { "text": "and ", "styled": false },
+        { "text": "collaborative ", "styled": true },
+        { "text": "digital future.", "styled": false }
+      ]
+    },
+    "leadership": {
+      "header": "</leadership>",
+      "leaders": [
+        {
+          "name": "Juliun Brabon",
+          "position": "CEO & Co-founder",
+          "photoUrl": "/images/persons/juliun-brabon.png"
+        },
+        {
+          "name": "Klay Nichol",
+          "position": "COO & Co-founder",
+          "photoUrl": "/images/persons/klay-nichol.png"
+        },
+        {
+          "name": "Michael Mathis",
+          "position": "CPO & Co-founder",
+          "photoUrl": "/images/persons/michael-mathis.png"
+        }
+      ]
+    }
+  },
+  "productPage": {
+    "hero": {
+      "heading": "Unlock the digital future",
+      "headingMobile": "Unlock the digital future"
+    },
+    "features": {
+      "publicDisadvantages": {
+        "heading": [
+          { "text": "The power of public blockchain technology has remained " },
+          { "text": "inaccessible", "styled": true },
+          { "text": " due to the reliance on cryptocurrency." }
+        ],
+        "headingMobile": [
+          { "text": "Public blockchain technology has remained " },
+          { "text": "inaccessible", "styled": true },
+          { "text": " due to the reliance on cryptocurrency." }
+        ],
+        "subHeading": "Today’s public networks are characterized by",
+        "features": [
+          { "name": "Regulatory Risk", "iconType": "regulatoryRisk" },
+          { "name": "Poor User Experience", "iconType": "poorUx" },
+          { "name": "Limited Capacity", "iconType": "limitedCapacity" },
+          { "name": "Highly Volatile", "iconType": "restrictedAccess" }
+        ]
+      },
+      "stabilityAdvantages": {
+        "heading": [
+          { "text": "Stability ", "styled": true },
+          {
+            "text": "is the first public distributed network created "
+          },
+          { "text": "without a cryptocurrency.", "styled": true }
+        ],
+        "headingMobile": [
+          { "text": "Stability ", "styled": true },
+          {
+            "text": "is the first public distributed network created "
+          },
+          { "text": "without a cryptocurrency.", "styled": true }
+        ],
+        "subHeading1": "Stability has been built from the ground up to unlock global access to the powerful utility of blockchain technology.",
+        "subHeading2": "Our simple and intuitive network offers",
+        "features": [
+          { "name": "One-Click User Onboarding", "iconType": "oneclickOnboarding" },
+          { "name": "Regulatory Clarity", "iconType": "regulatoryClear" },
+          { "name": "Non-financial Onchain Interactions", "iconType": "onchainIntetactions" },
+          { "name": "Customizable Enterprise Integrations", "iconType": "enterpriseIntegrations" }
+        ]
+      },
+      "experience": {
+        "heading": "A Better Onchain Experience",
+
+        "experienceList": [
+          {
+            "heading": "Users",
+            "details": ["Free to Use", "Simple UI/UX", "SSO Login Access", "App Marketplace"],
+            "buttonType": "earlyAccess"
+          },
+          {
+            "heading": "Developers",
+            "details": [
+              "Zero Cost Deployment",
+              "Web2 SDKs",
+              "Fintech Integrations",
+              "EVM Environment",
+              "Customizable Web3 Payments"
+            ],
+            "buttonType": "contact"
+          },
+          {
+            "heading": "Enterprise",
+            "details": [
+              "Unlimited Capacity",
+              "Regulatory Clarity",
+              "Future-Proof Composable Data",
+              "Robust Privacy & Security Controls",
+              "Immutable Global State"
+            ],
+            "buttonType": "contact"
+          }
+        ]
+      }
+    }
+  },
+  "aboutPage": {
+    "hero": {
+      "heading": "We believe in a future in which digital privacy and composability empowers society to innovate and prosper.",
+      "headingMobile": "The most transformational technology of the digital age should be accessible to everyone.",
+      "subHeading": "Stability is leading the paradigm shift from speculation to utility."
+    },
+    "value": {
+      "heading": "Our Values",
+      "values": [
+        { "text": "Purpose Driven", "color": "blue" },
+        { "text": "Utility Focused", "color": "green" },
+        { "text": "Digital Privacy", "color": "orange" },
+        { "text": "User Experience", "color": "red" },
+        { "text": "Creativity", "color": "blue" },
+        { "text": "Stability", "color": "orange" }
+      ]
+    },
+    "team": {
+      "sectionHeading": "</Our Team>",
+      "heading": "Disrupting with Purpose",
+      "subHeading": "We are a veteran team of 13 experienced builders with a shared vision of utility and ubiquitous access to public blockchains that enables data privacy and security for a digital society.",
+      "experienceHeading": "Our Past Experience",
+      "teamMembers": [
+        {
+          "name": "Daniel Blanco",
+          "position": "Head of Engineering",
+          "photoUrl": "/images/persons/daniel-blanco.png"
+        },
+        {
+          "name": "Kerk Wei Yang",
+          "position": "Head of Research & Design",
+          "photoUrl": "/images/persons/kerk-wei-yang.png"
+        },
+        {
+          "name": "Tiara Rashid",
+          "position": "HR Specialist",
+          "photoUrl": "/images/persons/tiara-rashid.png"
+        },
+        {
+          "name": "William Marcussen",
+          "position": "Strategy & Ops Lead",
+          "photoUrl": "/images/persons/william-marcussen.png"
+        },
+        {
+          "name": "Zohra Mohamadi",
+          "position": "Tech Product Manager",
+          "photoUrl": "/images/persons/zohra-mohamadi.png"
+        },
+        {
+          "name": "Adam Cowan",
+          "position": "Engineer",
+          "photoUrl": "/images/persons/adam-cowan.png"
+        },
+        {
+          "name": "Carlos Lostao",
+          "position": "Full Stack Developer",
+          "photoUrl": "/images/persons/carlos-lostao.png"
+        },
+        {
+          "name": "Gabriel Martinez",
+          "position": "Full Stack Developer",
+          "photoUrl": "/images/persons/gabriel-martinez.png"
+        },
+        {
+          "name": "Steve Green",
+          "position": "Marketing Lead",
+          "photoUrl": "/images/persons/steve-green.png"
+        },
+        {
+          "name": "Ben Reesman",
+          "position": "Engineer",
+          "photoUrl": "/images/persons/ben-reesman.png"
+        }
+      ]
+    }
+  },
+  "ctaBox": {
+    "heading": "Join for Early Access",
+    "subHeading": "<Launching in November>"
+  },
+  "faq": {
+    "header": "</FAQ>",
+    "faqList": [
+      {
+        "name": "What is Stability’s business model?",
+        "content": [
+          "Stability is an open-source software developer, commercializing its blockchain node software through licensing to enterprise and high-volume consumers. Without a native token or token sale model, Stability instead licenses its node software to generate annual recurring revenue (ARR) - offering a unique model in the industry.",
+          " This Software-as-a-Service model contrasts with every public blockchain today by enabling every day consumers to use a public blockchain at no cost, while improving upon the benefits of blockchain technology as an enterprise business solution."
+        ]
+      },
+      {
+        "name": [
+          { "text": "How does Stability differ from " },
+          { "text": "Private ", "styled": true },
+          { "text": "Blockchains?" }
+        ],
+        "content": "While private blockchains impose limitations on user access and permissions, Stability stands out as a public, tokenless and permissionless platform, enabling open interaction and collaboration across the Stability network for anyone who wishes to participate."
+      },
+      {
+        "name": [
+          { "text": "How does Stability differ from " },
+          { "text": "Public ", "styled": true },
+          { "text": "Blockchains?" }
+        ],
+        "content": [
+          "Stability stands out as the pioneer in genuine permissionless public blockchains, setting itself apart from the industry norm of requiring a cryptocurrency to access the network.",
+          "Furthermore, Stability distinguishes itself by being the sole public blockchain network to provide non-financial on-chain transactions.",
+          "Lastly, as a currency-agnostic network, Stability is unaffected by the typical regulatory uncertainties, scalability constraints, volatility, and user experience challenges that severely limited adoption of today’s public blockchains."
+        ]
+      },
+      {
+        "name": "What is a non-financial transaction on Stability and why is it important for the blockchain industry?",
+        "content": [
+          "Unlike public blockchains that require cryptocurrency for transactions, making every on-chain interaction financial, Stability operates without a cryptocurrency, thus removing the need to acquire or exchange a financial asset in order to interact on the network",
+          "By enabling zero fee, non-financial on-chain interactions, Stability unlocks unlimited utility and eliminates the key obstacles preventing global adoption of blockchain technology, making it accessible to everyone."
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "header": "</blog>",
+    "readMore": { "text": "Read More" },
+
+    "resourcesList": [
+      {
+        "imageUrl": "https://miro.medium.com/v2/resize:fit:720/format:webp/1*BXGu51CnL2nR7BmMkcu89A.png",
+        "date": "Jan. 03. 2023",
+        "title": "Introducing STABILITY",
+        "text": "Digital innovation has enabled fast, autonomous global interaction unlike any prior period in history. As more aspects of our modern life are transposed to the digital space, the need for tamper-proof record keeping, security, and data privacy is rising exponentially. Blockchain offers a great solution.",
+        "link": "https://medium.com/@StabilityInc/introducing-stability-b155406859e9"
+      }
+    ]
+  },
+  "navigation": {
+    "about": "about us",
+    "product": "product",
+    "resources": "resources",
+    "subresources": {
+      "marketplace": "marketplace",
+      "account": "account overview",
+      "docs": "docs",
+      "blog": "blog",
+      "explorer": "block explorer"
+    }
+  },
+  "buttons": {
+    "signUp": "sign up",
+    "signUpNow": "sign up now",
+    "earlyAccess": "Build on stability",
+    "learnMore": "learn more",
+    "readMoreAboutUs": "read more about us",
+    "contactUs": "contact us",
+    "goFeeless": "go feeless"
+  },
+  "outerLinks": {
+    "mailtoContact": "mailto:contact@stabilityprotocol.com",
+    "mediumLink": "https://medium.com/stabilitynetwork"
+  },
+  "footer": {
+    "followUs": "Follow us on",
+    "mediaLinks": {
+      "x": "https://twitter.com/stabilityinc",
+      "linkedIn": "https://www.linkedin.com/company/stabilitysolutions/"
+    },
+    "copyright": "Copyright © 2023 Stability Solutions Inc. All rights reserved.",
+    "links": [
+      { "name": "Product", "link": "/product" },
+      { "name": "Contact Us", "link": "/" },
+      { "name": "About Us", "link": "/about" },
+      { "name": "Resources", "link": "mailto:contact@stabilityprotocol.com" }
+    ],
+    "terms": [
+      {
+        "name": "Privacy Policy",
+        "link": "https://docs.google.com/document/d/e/2PACX-1vRRuyqWfxzqxfgWgQ_QM72TJt0hAz6CaI2-o7IIZsYBCd0HY0l7E638B5O5_mAsSA/pub"
+      }
+    ]
+  }
+}

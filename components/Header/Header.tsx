@@ -1,11 +1,13 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
+import { useTranslation } from 'next-i18next';
 import { MobileMenu, Modal, Navigation } from '@/components';
 import coloredLogo from '@/public/images/colored-logo.svg';
 import burgerIcon from '@/public/icons/burger.svg';
 
 export const Header = () => {
+  const { t } = useTranslation();
   const [showMenu, setShowMenu] = useState(false);
 
   const MENU_CLOSE_DEFAULT_TIMEOUT_MS = 800;
@@ -20,7 +22,7 @@ export const Header = () => {
     setShowMenu(false);
   };
   return (
-    <header className="absolute w-full md:h-[12rem]">
+    <header className="fixed w-full md:absolute md:h-[12rem] z-10">
       <div className="mx-auto max-w-[144rem] h-full">
         <div className="py-4 px-[1.6rem] h-full md:py-[2.2rem] md:px-[2.6rem] md:pb-[2.1rem]">
           <div className="bg-neutralColor20 rounded-2xl h-[4.3rem] flex items-center justify-between md:space-x-5 lg:space-x-20 px-[1.1rem] md:h-full md:rounded-[2rem] md:pl-[2.8rem] md:pr-[1.7rem]">
@@ -37,7 +39,7 @@ export const Header = () => {
                 className="min-w-max px-[2.4rem] py-[1.4rem] rounded-[8px] bg-primaryWaterBlue border border-midnightDarkBlue text-midnightDarkBlue text-[1.8rem] hover:bg-midnightDarkBlue hover:text-primaryWaterBlue duration-300 uppercase font-grotesk font-bold tracking-widest leading-none"
                 onClick={singUpButtonHandler}
               >
-                Build on stability
+                {t('buttons.earlyAccess')}
               </button>
             </div>
             <div className="flex items-center md:hidden">
