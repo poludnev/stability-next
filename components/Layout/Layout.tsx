@@ -1,4 +1,4 @@
-import { Header } from '@/components';
+import { Header, Footer } from '@/components';
 import { Sora, Space_Grotesk, DM_Sans } from 'next/font/google';
 
 const sora = Sora({
@@ -24,6 +24,7 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
     >
       <Header />
       <>{children}</>
+      <Footer />
     </div>
   );
 };

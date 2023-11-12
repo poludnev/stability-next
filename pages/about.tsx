@@ -15,7 +15,7 @@ export default function AboutPage(): InferGetStaticPropsType<typeof getStaticPro
     <main className="pt-[7.5rem]">
       <Hero />
       <Values />
-      <div className="h-100 bg-black">adfadsfasfsadf</div>
+      <div className="min-h-[50rem] bg-indigo-50"></div>
     </main>
   );
 }

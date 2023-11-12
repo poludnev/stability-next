@@ -13,6 +13,7 @@ export default function ProductPage(): InferGetStaticPropsType<typeof getStaticP
   return (
     <main>
       <Hero />
+      <div className="min-h-[50rem] bg-indigo-50"></div>
     </main>
   );
 }

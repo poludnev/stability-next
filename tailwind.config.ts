@@ -39,6 +39,8 @@ const config: Config = {
         aboutHeroMoble: 'url("../public/images/bg/about-hero-bg-mobile.webp")',
         agoutHeroDesktop: 'url("../public/images/bg/about-hero-bg.webp")',
         productHero: 'url("../public/images/bg/product-hero-bg.webp")',
+        footerMobile: 'url("../public/images/bg/footer-bg-mobile.webp")',
+        footerDesktop: 'url("../public/images/bg/footer-bg.webp")',
       }),
       keyframes: {
         slidein: {

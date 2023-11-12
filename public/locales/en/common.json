@@ -292,11 +292,9 @@
       { "name": "About Us", "link": "/about" },
       { "name": "Resources", "link": "mailto:contact@stabilityprotocol.com" }
     ],
-    "terms": [
-      {
-        "name": "Privacy Policy",
-        "link": "https://docs.google.com/document/d/e/2PACX-1vRRuyqWfxzqxfgWgQ_QM72TJt0hAz6CaI2-o7IIZsYBCd0HY0l7E638B5O5_mAsSA/pub"
-      }
-    ]
+    "terms": {
+      "name": "Privacy Policy",
+      "link": "https://docs.google.com/document/d/e/2PACX-1vRRuyqWfxzqxfgWgQ_QM72TJt0hAz6CaI2-o7IIZsYBCd0HY0l7E638B5O5_mAsSA/pub"
+    }
   }
 }

@@ -7,7 +7,7 @@ html {
 }
 
 .btn {
-  @apply flex items-center justify-between rounded-[1rem] bg-primaryWaterBlue border border-midnightDarkBlue hover:bg-midnightDarkBlue hover:text-primaryWaterBlue duration-300 min-w-max font-grotesk font-bold text-[1.8rem] tracking-[0.9px] leading-[normal] uppercase py-[1rem] px-[1.4rem] space-x-[0.8rem];
+  @apply flex items-center justify-between rounded-[1rem] bg-primaryWaterBlue border border-midnightDarkBlue hover:bg-midnightDarkBlue hover:text-primaryWaterBlue duration-300 min-w-max font-grotesk font-bold text-[1.8rem] tracking-[0.9px] leading-[normal] uppercase py-[1rem] px-[1.4rem] space-x-[0.8rem] md:py-[1.4rem] md:px-[2.4rem];
 }
 
 .btn svg {
@@ -24,6 +24,10 @@ html {
   @apply bg-primaryWaterBlue text-midnightDarkBlue;
 }
 
+.btn-dark {
+  @apply bg-midnightDarkBlue border-neutralColor10 hover:text-neutralColor10;
+}
+
 .hero-background-home {
   @apply absolute z-0 bg-cover bg-no-repeat w-full top-[-7.5rem] left-1/2 -translate-x-1/2 bg-homeHeroMobile xs:bg-homeHeroDesktop xs:w-[144rem] xs:h-full;
   height: calc(100% + 7.5rem);
@@ -37,6 +41,10 @@ html {
   @apply bg-productHero bg-cover;
 }
 
+.footer-background {
+  @apply bg-footerMobile bg-cover md:bg-footerDesktop;
+}
+
 .hero-gradient-about {
   background: linear-gradient(
     90deg,
@@ -45,4 +53,8 @@ html {
     rgb(255 255 255 / 90%) 95%,
     rgb(255 255 255) 100%
   );
+}
+
+.topOffset6 {
+  top: calc(50% - 6rem);
 }
