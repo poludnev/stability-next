@@ -23,6 +23,7 @@ const config: Config = {
         midnightDarkBlue: '#2d3353',
         neutralColor10: '#fff',
         neutralColor20: '#f4f4f4',
+        neutralColor30: '#bababa',
         accentColorBrightLightBlue: '#41eef9',
         accentColorOrange: '#ffc123',
         accentColorRedOrange: '#f97068',
