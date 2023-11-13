@@ -23,3 +23,10 @@ export interface IResourceElementProps {
   link: string | null;
   imageUrl: string | null;
 }
+
+export interface TStyledText {
+  text: string;
+  styled: boolean | undefined;
+}
+
+export type TStyledTextList = TStyledText[];

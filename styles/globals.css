@@ -6,6 +6,12 @@ html {
   font-size: 62.5%;
 }
 
+@layer {
+  details summary::-webkit-details-marker {
+    display: none;
+  }
+}
+
 .btn {
   @apply flex items-center justify-between rounded-[1rem] bg-primaryWaterBlue border border-midnightDarkBlue hover:bg-midnightDarkBlue hover:text-primaryWaterBlue duration-300 min-w-max font-grotesk font-bold text-[1.8rem] tracking-[0.9px] leading-[normal] uppercase py-[1rem] px-[1.4rem] space-x-[0.8rem] md:py-[1.4rem] md:px-[2.4rem];
 }
@@ -57,4 +63,24 @@ html {
 
 .topOffset6 {
   top: calc(50% - 6rem);
+}
+
+.details summary::before {
+  position: absolute;
+  content: '';
+  width: 2.4rem;
+  height: 2.4rem;
+  background-image: url('../public/icons/arrow-left.svg');
+  right: 0;
+  transform: rotate(-90deg) translateX(50%);
+  top: 50%;
+}
+
+.details[open] summary::before {
+  transform: rotate(90deg);
+  top: 25%;
+}
+
+@media screen and (min-width: 768px) {
+  top: 0;
 }

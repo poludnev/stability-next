@@ -21,6 +21,7 @@ const config: Config = {
         primaryWaterBlue: '#30c5ff',
         secondaryColorBeige: '#f6ebdb',
         midnightDarkBlue: '#2d3353',
+        beige02: '#faf5ed',
         neutralColor10: '#fff',
         neutralColor20: '#f4f4f4',
         neutralColor30: '#bababa',
@@ -66,6 +67,7 @@ const config: Config = {
     'bg-accentColorOrange',
     'bg-accentColorRedOrange',
     'bg-accentColorMint',
+    'text-primaryWaterBlue',
   ],
 };
 export default config;
