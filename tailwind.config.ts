@@ -19,6 +19,7 @@ const config: Config = {
       },
       colors: {
         primaryWaterBlue: '#30c5ff',
+        secondaryColorBeige: '#f6ebdb',
         midnightDarkBlue: '#2d3353',
         neutralColor10: '#fff',
         neutralColor20: '#f4f4f4',

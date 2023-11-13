@@ -8,17 +8,7 @@ import { Grill } from '@/components';
 
 export const Footer = () => {
   const { t } = useTranslation();
-
-  type TRoutesName = 'about' | 'product' | 'contacts' | 'blog';
-
-  const navigationListData: {
-    name: string;
-    link: TRoutesName;
-  }[] = t('navigation', {
-    returnObjects: true,
-  });
-
-  console.log(navigationListData);
+  
   return (
     <footer className="relative footer-background bg-midnightDarkBlue text-neutralColor10 pt-[6.6rem] pb-[2rem] min-h-[30rem] md:pt-[12rem]">
       <Grill alignCenter />

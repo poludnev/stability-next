@@ -19,7 +19,7 @@ const DMSans = DM_Sans({
 export const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <div
-      className={`${sora.variable} ${spaceGrotesk.variable} ${DMSans.variable} `}
+      className={`${sora.variable} ${spaceGrotesk.variable} ${DMSans.variable} overflow-x-hidden `}
       id="modal-container"
     >
       <Header />
