@@ -14,3 +14,4 @@ export * from '@/components/Hero';
 export * from '@/components/Leadership';
 export * from '@/components/Slider';
 export * from '@/components/Person';
+export * from '@/components/Team';
