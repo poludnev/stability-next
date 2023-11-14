@@ -1,8 +1,6 @@
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { GetStaticProps, InferGetStaticPropsType } from 'next';
-import { HomePageHero as Hero } from '@/components';
-import { Blog, CTABox, FAQ } from '@/components';
-import { Mission } from '@/components';
+import { HomePageHero as Hero, Leadership, Blog, CTABox, FAQ, Mission } from '@/components';
 
 export const getStaticProps: GetStaticProps = async (context) => {
   return {
@@ -18,7 +16,7 @@ export default function HomePage(): InferGetStaticPropsType<typeof getStaticProp
     <main className="pt-[7.5rem]">
       <Hero />
       <Mission />
-      <div className="min-h-[10rem] bg-indigo-50"></div>
+      <Leadership />
       <CTABox />
       <FAQ />
       <Blog />

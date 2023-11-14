@@ -30,3 +30,10 @@ export interface TStyledText {
 }
 
 export type TStyledTextList = TStyledText[];
+
+export interface TPersonData {
+  name: string;
+  position: string;
+  photoUrl?: string;
+}
+export type TPersonDataList = TPersonData[];

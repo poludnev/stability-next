@@ -25,6 +25,7 @@ const config: Config = {
         neutralColor10: '#fff',
         neutralColor20: '#f4f4f4',
         neutralColor30: '#bababa',
+        neutralColor70: '#0a0a0a',
         accentColorBrightLightBlue: '#41eef9',
         accentColorOrange: '#ffc123',
         accentColorRedOrange: '#f97068',

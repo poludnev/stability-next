@@ -3,6 +3,10 @@ import { useTranslation } from 'next-i18next';
 import cube from '@/public/images/cube-lev.svg';
 export const CTABox = () => {
   const { t } = useTranslation();
+  const learnmoreButtonHandler = (): void => {
+    window.open('https://docs.stabilityprotocol.com/', '_blank');
+  };
+
   return (
     <section className="xs:px-[4.8rem] mb- mb-32 md:mb-40">
       <div
@@ -26,7 +30,9 @@ export const CTABox = () => {
           </p>
         </div>
         <div className="p-[2.7rem] flex items-center md:py-[4.2rem] md:px-[6.1rem]">
-          <button className="btn mx-auto">{t('buttons.earlyAccess')}</button>
+          <button onClick={learnmoreButtonHandler} className="btn mx-auto">
+            {t('buttons.earlyAccess')}
+          </button>
         </div>
       </div>
     </section>

@@ -1,39 +1,30 @@
 import { useTranslation } from 'next-i18next';
-import { Grill } from '..';
-
-export const Mission = () => {
+import { Person, Slider } from '..';
+import { TPersonDataList } from '@/types';
+export const Leadership = () => {
   const { t } = useTranslation();
-  const sectionHeading: Array<{
-    text: string;
-    styled: boolean;
-  }> = t('homepage.mission.heading', { returnObjects: true });
 
+  const leadersList: TPersonDataList = t('homepage.leadership.leaders', {
+    returnObjects: true,
+  });
 
-  const learnMoreButtonHandler = (): void => {
+  const learnmoreButtonHandler = (): void => {
     window.open('https://docs.stabilityprotocol.com/', '_blank');
   };
 
   return (
-    <section className="relative mb-32 bg-midnightDarkBlue mission-background px-8 pt-80 pb-96 md:px-20 md:mb-40">
-      <Grill propWidth={1280} userRectWidth={80} />
-      <div className="relative z-1">
-        <p className="mb-16 font-grotesk font-bold text-center text-neutralColor10 text-[2rem] leading-[2.8rem] tracking-[1.6px] uppercase md:text-[3.2rem] md:leading-[3.8rem]">
-          {t('homepage.mission.missionTag')}
+    <section className=" bg-neutralColor10 mx-auto max-w-[144rem] px-16 mb-32 md:mb-40 flex flex-col md:flex-row flex-wrap justify-center lg:justify-between items-center gap-y-24 gap-x-18 lg:gap-30">
+      <div className="md:h-[28.9rem] md:w-[35.7rem] px-[4.2rem] py-[3.6rem] flex flex-col justify-end md:bg-[url('../public/icons/folder-image.svg')]">
+        <p className="mx-auto mb-8 font-grotesk font-medium text-[3.2rem] text-center tracking-[1.6px] leading-[3.8rem] uppercase">
+          {t('homepage.leadership.header')}
         </p>
-        <h1 className="max-w-[112rem] mx-auto mb-16 font-grotesk font-bold text-center text-[3.2rem] text-neutralColor10 leading-[3.8rem] tracking-[0.32px] md:text-[6.4rem] md:leading-[7.8rem] md:tracking-[-1.28px]">
-          {sectionHeading.map(({ text, styled }, index) => (
-            <span
-              key={text + index}
-              className={`${styled && 'text-' + 'accentColorBrightLightBlue'}`}
-            >
-              {text}
-            </span>
-          ))}
-        </h1>
-        <button className="btn btn-outlined mx-auto" onClick={learnMoreButtonHandler}>
-          <span>{t('buttons.learnMore')}</span>
+        <button
+          onClick={learnmoreButtonHandler}
+          className="btn smaller-text group mx-auto text-[1.6rem]"
+        >
+          <span>{t('buttons.readMoreAboutUs')}</span>
           <svg
-            className=" fill-neutralColor10"
+            className="fill-midnightDarkBlue group-hover:fill-primaryWaterBlue"
             width="30"
             height="30"
             viewBox="0 0 30 30"
@@ -47,6 +38,23 @@ export const Mission = () => {
             </g>
           </svg>
         </button>
+      </div>
+      <div className="hidden md:flex space-x-4 xl:gap-32 2xl:gap-40 pt-4 pb-12 px-10">
+        {leadersList.map(({ name, position, photoUrl }) => (
+          <Person name={name} possitionTitle={position} key={name + position} imageUrl={photoUrl} />
+        ))}
+      </div>
+      <div className="md:hidden">
+        <Slider>
+          {leadersList.map(({ name, position, photoUrl }) => (
+            <Person
+              name={name}
+              possitionTitle={position}
+              key={name + position}
+              imageUrl={photoUrl}
+            />
+          ))}
+        </Slider>
       </div>
     </section>
   );

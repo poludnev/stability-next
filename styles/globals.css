@@ -16,6 +16,10 @@ html {
   @apply flex items-center justify-between rounded-[1rem] bg-primaryWaterBlue border border-midnightDarkBlue hover:bg-midnightDarkBlue hover:text-primaryWaterBlue duration-300 min-w-max font-grotesk font-bold text-[1.8rem] tracking-[0.9px] leading-[normal] uppercase py-[1rem] px-[1.4rem] space-x-[0.8rem] md:py-[1.4rem] md:px-[2.4rem];
 }
 
+.btn.smaller-text {
+  @apply text-[1.6rem];
+}
+
 .btn svg {
   @apply duration-300;
   width: 24px;
@@ -35,7 +39,7 @@ html {
 }
 
 .btn-outlined {
-  @apply bg-transparent border-neutralColor10 text-neutralColor10 hover:text-neutralColor10 md:py-8 md:px-12;
+  @apply bg-transparent border-neutralColor10 text-neutralColor10 hover:text-neutralColor10 hover:bg-transparent md:py-8 md:px-12;
 }
 
 .hero-background-home {

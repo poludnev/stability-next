@@ -11,3 +11,6 @@ export * from '@/components/Blog';
 export * from '@/components/FAQ';
 export * from '@/components/Mission';
 export * from '@/components/Hero';
+export * from '@/components/Leadership';
+export * from '@/components/Slider';
+export * from '@/components/Person';
