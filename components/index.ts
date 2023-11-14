@@ -9,3 +9,5 @@ export * from '@/components/Grill';
 export * from '@/components/CTABox';
 export * from '@/components/Blog';
 export * from '@/components/FAQ';
+export * from '@/components/Mission';
+export * from '@/components/Hero';

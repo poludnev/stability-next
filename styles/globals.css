@@ -34,9 +34,17 @@ html {
   @apply bg-midnightDarkBlue border-neutralColor10 hover:text-neutralColor10;
 }
 
+.btn-outlined {
+  @apply bg-transparent border-neutralColor10 text-neutralColor10 hover:text-neutralColor10 md:py-8 md:px-12;
+}
+
 .hero-background-home {
   @apply absolute z-0 bg-cover bg-no-repeat w-full top-[-7.5rem] left-1/2 -translate-x-1/2 bg-homeHeroMobile xs:bg-homeHeroDesktop xs:w-[144rem] xs:h-full;
   height: calc(100% + 7.5rem);
+}
+
+.mission-background {
+  @apply bg-homeMissionMoble bg-cover bg-center md:bg-homeMissionDesktop md:bg-top 2xl:bg-center;
 }
 
 .hero-background-about {

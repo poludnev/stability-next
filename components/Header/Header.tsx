@@ -22,7 +22,7 @@ export const Header = () => {
     setShowMenu(false);
   };
   return (
-    <header className="fixed w-full md:absolute md:h-[12rem] z-10">
+    <header className="fixed w-full md:absolute md:h-[12rem] z-30">
       <div className="mx-auto max-w-[144rem] h-full">
         <div className="py-4 px-[1.6rem] h-full md:py-[2.2rem] md:px-[2.6rem] md:pb-[2.1rem]">
           <div className="bg-neutralColor20 rounded-2xl h-[4.3rem] flex items-center justify-between md:space-x-5 lg:space-x-20 px-[1.1rem] md:h-full md:rounded-[2rem] md:pl-[2.8rem] md:pr-[1.7rem]">

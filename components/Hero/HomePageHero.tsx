@@ -62,7 +62,7 @@ export const HomePageHero = () => {
           </button>
         </div>
       </div>
-      <div className="absolute left-1/2 bottom-0 translate-y-1/2 -translate-x-1/2 w-[27.7rem] md:w-[42rem]">
+      <div className="absolute z-20 left-1/2 bottom-0 translate-y-1/2 -translate-x-1/2 w-[27.7rem] md:w-[42rem]">
         <Image src={BalckDiamond} alt="black diamond" />
       </div>
     </section>

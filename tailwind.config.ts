@@ -39,6 +39,8 @@ const config: Config = {
       backgroundImage: () => ({
         homeHeroMobile: 'url("../public/images/bg/home-hero-bg-mobile.webp")',
         homeHeroDesktop: 'url("../public/images/bg/home-hero-bg.webp")',
+        homeMissionMoble: 'url("../public/images/bg/home-mission-bg-image-mobile.webp")',
+        homeMissionDesktop: 'url("../public/images/bg/home-mission-bg-image.webp")',
         aboutHeroMoble: 'url("../public/images/bg/about-hero-bg-mobile.webp")',
         agoutHeroDesktop: 'url("../public/images/bg/about-hero-bg.webp")',
         productHero: 'url("../public/images/bg/product-hero-bg.webp")',
@@ -68,6 +70,7 @@ const config: Config = {
     'bg-accentColorRedOrange',
     'bg-accentColorMint',
     'text-primaryWaterBlue',
+    'text-accentColorBrightLightBlue',
   ],
 };
 export default config;

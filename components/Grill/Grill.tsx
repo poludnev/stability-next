@@ -54,7 +54,7 @@ export const Grill = ({
   return (
     <div
       ref={containerRef}
-      className={`absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 overflow-hidden w-full h-full ${
+      className={`absolute z-10 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 overflow-hidden w-full h-full ${
         topOffSet6 && 'topOffset6'
       }`}
     >
