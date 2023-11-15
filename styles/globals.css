@@ -42,6 +42,10 @@ html {
   @apply bg-transparent border-neutralColor10 text-neutralColor10 hover:text-neutralColor10 hover:bg-transparent md:py-8 md:px-12;
 }
 
+.btn-outlined-dark {
+  @apply bg-transparent border-midnightDarkBlue hover:bg-transparent hover:text-midnightDarkBlue;
+}
+
 .hero-background-home {
   @apply absolute z-0 bg-cover bg-no-repeat w-full top-[-7.5rem] left-1/2 -translate-x-1/2 bg-homeHeroMobile xs:bg-homeHeroDesktop xs:w-[144rem] xs:h-full;
   height: calc(100% + 7.5rem);
@@ -55,12 +59,15 @@ html {
   @apply bg-no-repeat bg-cover bg-center bg-aboutHeroMobile md:bg-aboutHeroDesktop md:bg-[length:144rem];
 }
 
+.team-background-about {
+  @apply bg-aboutTeamMobile bg-cover md:bg-aboutTeamDesktop;
+}
 .hero-background-product {
   @apply bg-productHero bg-cover;
 }
 
-.team-background-about {
-  @apply bg-aboutTeamMobile bg-cover md:bg-aboutTeamDesktop;
+.featrues-background-product {
+  @apply bg-productFeatures bg-cover;
 }
 
 .footer-background {

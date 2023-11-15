@@ -117,10 +117,17 @@ export const Team = () => {
           </div>
         </div>
       </div>
-      <div className="relative bg-beige02 rounded-[2rem] top-[-2rem] py-24 px-2 flex flex-col items-center gap-4 xs:flex-row xs:flex-wrap justify-center max-w-[144rem] mx-auto">
-        {leadersList.map(({ name, position, photoUrl }) => (
-          <Person name={name} possitionTitle={position} key={name + position} imageUrl={photoUrl} />
-        ))}
+      <div className="relative bg-beige02 rounded-[2rem] top-[-2rem] py-24 px-2 flex flex-col items-center gap-4 xs:flex-row xs:flex-wrap xs:gap-16 justify-center max-w-[144rem] mx-auto">
+        <div className="flex flex-col gap-4 basis-full xs:flex-row flex-wrap justify-center">
+          {leadersList.map(({ name, position, photoUrl }) => (
+            <Person
+              name={name}
+              possitionTitle={position}
+              key={name + position}
+              imageUrl={photoUrl}
+            />
+          ))}
+        </div>
         {teamMembersList.map(({ name, position, photoUrl }) => (
           <Person name={name} possitionTitle={position} key={name + position} imageUrl={photoUrl} />
         ))}

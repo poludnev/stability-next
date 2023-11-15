@@ -8,7 +8,11 @@ import { Grill } from '@/components';
 
 export const Footer = () => {
   const { t } = useTranslation();
-  
+
+  const singUpButtonHandler = (): void => {
+    window.open('https://docs.stabilityprotocol.com/', '_blank');
+  };
+
   return (
     <footer className="relative footer-background bg-midnightDarkBlue text-neutralColor10 pt-[6.6rem] pb-[2rem] min-h-[30rem] md:pt-[12rem]">
       <Grill alignCenter />
@@ -30,7 +34,9 @@ export const Footer = () => {
               </a>
             </div>
 
-            <button className="btn btn-dark space-x-0 mx-auto">{t('buttons.earlyAccess')}</button>
+            <button onClick={singUpButtonHandler} className="btn btn-dark space-x-0 mx-auto">
+              {t('buttons.earlyAccess')}
+            </button>
           </div>
           <nav>
             <ul className="font-sans text-[1.6rem] capitalize leading-[2.8rem] grid grid-cols-2 gap-x-[6.2rem] gap-y-8 md:text-[2rem]">

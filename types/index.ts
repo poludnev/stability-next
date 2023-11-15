@@ -37,3 +37,17 @@ export interface TPersonData {
   photoUrl?: string;
 }
 export type TPersonDataList = TPersonData[];
+
+export interface TFeatureElement {
+  name: string;
+  iconType: string;
+}
+export type TFeatureElementList = TFeatureElement[];
+
+export interface TExperienceCard {
+  heading: string;
+  details: string[];
+  buttonType: string;
+}
+export type TExperienceCardList = TExperienceCard[];
+

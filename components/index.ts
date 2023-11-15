@@ -15,3 +15,7 @@ export * from '@/components/Leadership';
 export * from '@/components/Slider';
 export * from '@/components/Person';
 export * from '@/components/Team';
+export * from '@/components/AdvantageCard';
+export * from '@/components/DisadvantageCard';
+export * from '@/components/Features';
+export * from '@/components/ExperienceCard'

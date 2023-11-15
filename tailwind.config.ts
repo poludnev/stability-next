@@ -30,12 +30,7 @@ const config: Config = {
         accentColorOrange: '#ffc123',
         accentColorRedOrange: '#f97068',
         accentColorMint: '#a9f5c4',
-        //       --neutral-color-20: #f4f4f4;
-        // --neutral-color-30: #bababa;
-        // --neutral-color-40: #989898;
-        // --neutral-color-50: #5d5d5d;
-        // --neutral-color-60: #3f3f3f;
-        // --neutral-color-70: #0a0a0a;
+        
       },
       backgroundImage: () => ({
         homeHeroMobile: 'url("../public/images/bg/home-hero-bg-mobile.webp")',
@@ -47,6 +42,7 @@ const config: Config = {
         aboutTeamMobile: 'url("../public/images/bg/about-team-bg-mobile.webp")',
         aboutTeamDesktop: 'url("../public/images/bg/about-team-bg.webp")',
         productHero: 'url("../public/images/bg/product-hero-bg.webp")',
+        productFeatures: 'url("../public/images/bg/product-bg-image.webp")',
         footerMobile: 'url("../public/images/bg/footer-bg-mobile.webp")',
         footerDesktop: 'url("../public/images/bg/footer-bg.webp")',
       }),
@@ -74,6 +70,7 @@ const config: Config = {
     'bg-accentColorMint',
     'text-primaryWaterBlue',
     'text-accentColorBrightLightBlue',
+    'text-accentColorRedOrange',
   ],
 };
 export default config;
