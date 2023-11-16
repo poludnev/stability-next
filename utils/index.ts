@@ -1,43 +1,35 @@
 import { TParsedRssFeed } from '@/types';
+import { parseFromString } from 'dom-parser';
 
-export const rssJsonParser = (data: string): TParsedRssFeed => {
+export const fetchMediumBlogFeed = async (): Promise<TParsedRssFeed> => {
   try {
-    const parsedJson = JSON.parse(data) as {
+    if (!process.env.MEDIUM_PATH) throw new Error('empty medium blog path');
+    const blogDataResponse = await fetch(process.env.MEDIUM_PATH);
+    const blogData: {
       items: { title: string; pubDate: string; link: string; content: string }[];
-    };
+    } = await blogDataResponse.json();
 
-    const items: TParsedRssFeed = parsedJson.items.map(({ title, pubDate, link, content }) => {
-      const parser = new DOMParser();
-      const document = parser.parseFromString(content, 'text/html');
+    const items = blogData.items.map(({ title, pubDate, link, content }) => {
+      const dom = parseFromString(content);
+      const firstParagraph = dom.getElementsByTagName('p')[0];
+      const text = firstParagraph.textContent;
 
-      const previewImageSrcUrl = document?.querySelector('figure')?.querySelector('img')?.src;
-
-      const articleContent = document !== null ? document.querySelectorAll('p') : null;
-
-      const text =
-        articleContent !== null
-          ? Array.from(articleContent)
-              .slice(0, 2)
-              .map((e) => e.textContent)
-              .filter((e) => typeof e === 'string')
-              .join(' ')
-          : null;
+      const imageUrl = dom
+        .getElementsByTagName('img')[0]
+        .attributes.find((el) => el.name === 'src');
 
       return {
         title,
-        date: new Date(pubDate),
-        imageUrl: previewImageSrcUrl !== undefined ? previewImageSrcUrl : null,
+        date: pubDate,
+        imageUrl: !!imageUrl ? imageUrl?.value : null,
         text,
         link,
       };
     });
+
     return items;
   } catch (error) {
-    if (error instanceof Error) {
-      console.error(error.message);
-    } else {
-      console.error(error);
-    }
+    console.error('fetchMediumBlogFeed', error);
     return [];
   }
 };
@@ -53,7 +45,7 @@ export const getFormattedDate = (date: Date | null) => {
     })
     .split(' ');
 
-  return `${localDateStringSplit[1]}. ${
+    return `${localDateStringSplit[1]}. ${
     localDateStringSplit[0].length < 2 ? '0' + localDateStringSplit[0] : localDateStringSplit[0]
   }. ${localDateStringSplit[2]}`;
 };

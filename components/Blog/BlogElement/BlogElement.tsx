@@ -1,14 +1,20 @@
 import { IResourceElementProps } from '@/types';
 import { getFormattedDate } from '@/utils';
+import { useEffect, useState } from 'react';
 
 export const BlogElement = ({ date, title, text, link, imageUrl }: IResourceElementProps) => {
-  const displayedDate = typeof date === 'string' ? date : getFormattedDate(date);
+  const [displayedDate, setdisplayedDate] = useState<string | null>(null);
+
   const STRING_TO_TRUNCATE_LENGTH = 160;
   const truncatedText =
     typeof text === 'string' && text?.length < STRING_TO_TRUNCATE_LENGTH
       ? text
       : text?.slice(0, STRING_TO_TRUNCATE_LENGTH) + '...';
-  console.log(imageUrl);
+
+  useEffect(() => {
+    if (!!date) setdisplayedDate(getFormattedDate(new Date(date)));
+  }, [date]);
+
   return (
     <article className="font-grotest md:max-w-[32%]">
       <a

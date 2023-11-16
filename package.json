@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "dom-parser": "^1.1.5",
     "i18next": "^23.7.3",
     "next": "13.5.6",
     "next-i18next": "^15.0.0",

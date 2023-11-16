@@ -1,5 +1,5 @@
 export interface TResource {
-  date: string | Date;
+  date: string;
   title: string;
   text: string;
   link: string;
@@ -11,13 +11,13 @@ export type TParsedRssFeed = {
   title: string | null;
   imageUrl: string | null;
   text: string | null;
-  date: Date | null;
+  date: string | null;
   link: string | null;
 }[];
 
 export interface IResourceElementProps {
   children?: React.ReactNode;
-  date: string | Date | null;
+  date: string | null;
   title: string | null;
   text: string | null;
   link: string | null;
@@ -50,4 +50,3 @@ export interface TExperienceCard {
   buttonType: string;
 }
 export type TExperienceCardList = TExperienceCard[];
-
